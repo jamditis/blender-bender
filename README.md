@@ -20,10 +20,10 @@ No one is pre-assigned. A claim is a shared coordination convention, not an atom
 | --- | --- |
 | Blender scripts and small configuration files | `.blend` files and binary working variants |
 | Reference catalog, provenance and rights notes | Original photographs, large textures and source archives |
-| Source/output hashes and durable source IDs | Raw LiDAR, caches, heavy exports and renders |
-| Building issues, decisions, PRs and review notes | Large review-still packages linked from the issue |
+| Source/output hashes and public-safe asset aliases | Raw LiDAR, caches, heavy exports and renders |
+| Building issues, decisions, PRs and review notes | Large review-still packages shared through authorized private handoff |
 
-GitHub coordinates the work. It is not the only backup or the canonical binary store. Never commit signed download URLs, credentials or access tokens. Merely linking a source does not grant access to it.
+GitHub coordinates the work. It is not the only backup or the canonical binary store. Never commit private storage links or IDs, machine paths, signed download URLs, credentials or access tokens. Merely linking a source does not grant access to it.
 
 ## Current baseline
 
@@ -51,12 +51,12 @@ Official drawings can support measurements; photographs can support appearance a
 - `docs/BASELINE.md`: inspected source, limits and current building scope
 - `docs/STORAGE_AND_ACCESS.md`: Git/Git LFS tradeoffs and separate access boundaries
 - `references/`: reviewed reference index, source identity, dates and rights status
-- `manifests/`: durable source IDs, hashes and artifact status
+- `manifests/`: public-safe asset aliases, hashes and artifact status
 - `scripts/`: documented, reviewable modeling/validation helpers as they are added
 - `.github/`: task, reference-gap and pull-request templates
 
 ## Access and review
 
-The repository is prepared for public collaboration. The Project and working source archives remain private; access to them is separate. The setup does not invite collaborators, authorize outside agents, change access, publish work, deploy anything or commit spending.
+The repository is prepared for public collaboration. The Project and working source archives remain private; access to them is separate. Public repository visibility does not invite collaborators, authorize outside agents, grant private-source access, publish model assets, deploy anything or commit spending.
 
 Use pull-request review by agreement. Do not assume branch-protection enforcement is enabled: GitHub offers protection for public repositories on Free plans, but no protection rule or plan change was part of this setup. No open-source license has been selected; third-party reference rights remain source-specific.
