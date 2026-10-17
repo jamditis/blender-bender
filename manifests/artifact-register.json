@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "access_note": "Google Drive is the canonical shared model store. Library copies are secondary delivery/backup. This public register contains no private access locators and is not the live current-model pointer.",
+  "access_note": "Google Drive is the canonical shared model store. Library copies are secondary delivery/backup. The owner approved the existing folder's anyone-with-link viewing scope; no sharing setting was changed. This public register includes no Drive access locators and is not the live current-model pointer.",
   "artifacts": [
     {
       "alias": "msu-canonical-20261016",
@@ -14,7 +14,16 @@
     {
       "alias": "sprague-study",
       "status": "noncanonical_material_motion_study",
-      "note": "Excluded from geographic baseline; not a full-campus master."
+      "note": "Excluded from geographic baseline; not a full-campus master.",
+      "sha256": "7e2db17b5b7525cf156c6fcc9dafa7bc4cdaffd2b3eadfa84e44be0a299044f7",
+      "drive_handoff": {
+        "status": "uploaded_and_download_readback_verified",
+        "package_alias": "NJ-PBS-Sprague-brick-and-breeze-source-2026-10-17-share.zip",
+        "bytes": 99794401,
+        "sha256": "98af2bf7e0f03d62428fea48924071a2c69faba910196119661fea6ca1be8837",
+        "verified_utc": "2026-10-17T20:18:09Z",
+        "note": "Archived material/motion study, not an accepted geographic campus baseline. Complete sanitized package readback matches exact size and SHA-256."
+      }
     },
     {
       "alias": "shore-starter",
@@ -35,19 +44,33 @@
       "task": "https://github.com/jamditis/blender-bender/issues/7",
       "acceptance": "candidate_not_accepted_for_integration",
       "drive_handoff": {
-        "status": "blocked_write_access",
-        "upload_verified": false,
-        "current_manifest_updated": false,
+        "status": "uploaded_and_download_readback_verified",
+        "upload_verified": true,
+        "current_manifest_updated": true,
         "other_worker_access": "unverified",
-        "note": "The Drive handoff has not completed. The candidate remains privately preserved; do not treat this register as proof that the shared Drive latest pointer has advanced."
+        "verified_utc": "2026-10-17T20:18:09Z",
+        "package_alias": "NJ-PBS-Cole-central-cupola-source-2026-10-17-share.zip",
+        "bytes": 179152850,
+        "sha256": "ca47e69f97a004010310c421a5c0fb415b4128fef4b0856eba681e78217556b2",
+        "note": "Complete sanitized package downloaded back from Drive; exact size and SHA-256 match. Candidate only; no accepted full-campus replacement."
       }
     }
   ],
   "version_policy": {
-    "authoritative_current_register": "Owner-controlled private Google Drive current/version manifest",
-    "verify_before_edit": "Resolve the explicit accepted integration version or named candidate, then compare the actual downloaded SHA-256 with the private manifest.",
+    "authoritative_current_register": "Owner-controlled Google Drive current/version manifest under its approved sharing scope",
+    "verify_before_edit": "Resolve the explicit accepted integration version or named candidate, then compare the actual downloaded SHA-256 with the current/version manifest.",
     "preserve_history": "Retain the original snapshot and dated prior versions before advancing any current pointer.",
     "candidate_vs_accepted": "The latest candidate and accepted integration version are separate. A new upload does not imply review acceptance or geographic verification.",
     "handoff_evidence": "Verify upload identity, size/checksum and portable dependencies; verify each intended worker's access separately. Publish only aliases, hashes, status and non-sensitive evidence."
-  }
+  },
+  "drive_current_manifest": {
+    "alias": "CURRENT_MODEL_VERSIONS-2026-10-17.json",
+    "bytes": 3550,
+    "sha256": "585f83ac0e4a3ec6aced15c07dc63936293380311746cabde27896ab3b9f65a3",
+    "status": "uploaded_and_download_readback_verified",
+    "verified_utc": "2026-10-17T20:18:09Z",
+    "accepted_full_campus_update": false,
+    "note": "Identifies primary model entries, bundled preserved parents, exact hashes and review status. Request its location through authorized coordination."
+  },
+  "sharing_review": "Share-package text notes were sanitized; no raw research-reference photographs were added. Inherited model dependency licenses have not been exhaustively independently certified."
 }
