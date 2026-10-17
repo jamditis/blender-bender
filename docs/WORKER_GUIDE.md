@@ -9,7 +9,9 @@ The priority is MSU campus location fidelity. All video work is paused; review u
 - Read the issue and all recent comments immediately before claiming work. Check linked pull requests, related assets, and the current owner.
 - Identify the exact building, the part being changed, and what is outside the task.
 - Open the actual reference images. Confirm the intended building from visible features and its surroundings. Separate foreground subjects from background buildings. Resolve conflicting labels before relying on them.
-- Record each input's public-safe asset alias, version, and SHA-256 hash. Keep its private storage identity and exact working path in an owner-controlled private handoff. Hash the actual bytes you will use. A filename alone does not identify a version.
+- Use Google Drive as the canonical shared model store. Read its private current/version manifest before choosing an input; confirm whether the task calls for the accepted integration version or an explicitly named candidate. Do not infer the correct source from the newest timestamp.
+- Record each input's public-safe asset alias, version, and SHA-256 hash. Keep its private Drive identity and exact working path in an owner-controlled private handoff. Hash the actual downloaded bytes and compare them with that manifest. A filename alone does not identify a version. If the manifest, file or hash is unavailable, mark the dependent work blocked.
+- Treat Library copies as secondary delivery/backup. If using one temporarily, verify it matches the exact Drive version and hash; a Library copy does not supersede the shared Drive manifest.
 - Check access to the repository, private Project, and private source storage independently. The public repository grants no access to the others. If an input is inaccessible, report its public-safe asset alias and continue only work that does not depend on it.
 
 Use the [reference guide](./RIGHTS_AND_REFERENCES.md) for source records and permissions. Never put private storage IDs or links, local machine paths, account emails, credentials, tokens, or signed download URLs in public issues, pull requests, or commits. Keep private access details in owner-controlled private coordination; never share credentials or signed download URLs as a handoff.
@@ -50,8 +52,9 @@ Do not assign another person or take over because a checkpoint passed. A handoff
 - Use one branch per task. Include the issue number and a short description in its name where practical.
 - Work only within the claimed scope. Post an updated scope and coordinate any overlap before widening it.
 - Never edit the same `.blend` file simultaneously with another worker. Separate files can be worked on in parallel only when their boundaries and integration owner are agreed.
-- Keep `.blend` files, archives, raw LiDAR, heavy textures, and caches in owner-controlled private storage. Update only public-safe catalog aliases, versions, and checksums in Git.
-- Preserve the source version. Give a changed output a distinguishable version and record its SHA-256 hash; do not silently replace the input another worker is using.
+- Keep `.blend` files, archives, raw LiDAR, heavy textures, and caches in the owner-controlled private Google Drive store. Update only public-safe catalog aliases, versions, and checksums in Git.
+- Preserve the source version and dated backups. Give each changed output a distinguishable dated version and record its SHA-256; never silently replace an input another worker is using. Do not delete old versions or overwrite the original snapshot as part of a routine handoff.
+- Upload a bounded output as a candidate. Verify the uploaded artifact's identity, size/checksum and dependency package before updating the private current/version manifest. Preserve separate latest-candidate and accepted-integration pointers. Only an explicitly recorded review/acceptance decision can promote a candidate; newest does not mean accepted.
 - Record modeling software versions and linked dependencies needed to open the output. Flag missing tools or add-ons without installing or buying them as an implied part of the task.
 
 For each important dimension, record the source, source units, model units, model value, any conversion, and the result of the comparison. Use an agreed tolerance where one exists. If no tolerance or trustworthy measurement exists, state that clearly and ask for the review decision needed. Do not present a guessed dimension as surveyed or measured.
@@ -72,11 +75,12 @@ Do not render, assemble, or submit video while the pause remains in place.
 
 Use the pull request template and [review checklist](./REVIEW_CHECKLIST.md). Link the issue and claim comment. Include exact input/output versions and hashes, dimension results, still evidence, dependency checks, uncertainty, and the next action needed.
 
-Check public evidence links and confirm authorized reviewers can access any private inputs through the separate private handoff. If access is missing, report the blocker without exposing the private link; do not grant permissions or promise access on someone else's behalf. Repository, Project, and source-storage permissions are separate.
+Check public evidence links and verify the Drive upload/current manifest before claiming that a model is available there. Separately confirm authorized reviewers can access the required private inputs through the private handoff. An upload under one account does not prove another worker can download it. If either check is missing, state what is unverified without exposing a private link; do not grant permissions or promise access on someone else's behalf. Repository, Project, and Drive permissions are separate.
 
 At each checkpoint, post a brief issue update with what changed, the current output version, any blocker, and the next UTC checkpoint. When handing off, record:
 
 - The accepted or review-ready output's public-safe alias, version, repository-relative path where relevant, and SHA-256
+- Drive upload/current-manifest verification result, dated backup/version, and whether the output is a candidate or an accepted integration version; keep private locators out of GitHub
 - The matching branch/commit and pull request
 - Checks completed, checks blocked, and known uncertainty
 - Whether the `.blend` file identified by its asset alias is still being edited

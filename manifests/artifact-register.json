@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "access_note": "All working binaries remain in owner-controlled private storage; this public register includes no private access locators.",
+  "access_note": "Google Drive is the canonical shared model store. Library copies are secondary delivery/backup. This public register contains no private access locators and is not the live current-model pointer.",
   "artifacts": [
     {
       "alias": "msu-canonical-20261016",
@@ -32,7 +32,22 @@
       "scope": "Central cupola only; flank cupolas and building envelope remain open.",
       "validation": "Blender 4.5.14 LTS; close/context stills inspected; 64 dependencies, zero missing on portable reopen; ZIP CRC passed.",
       "limits": "Photo-derived widths/details; center/top from source notes without independent measurement receipt.",
-      "task": "https://github.com/jamditis/blender-bender/issues/7"
+      "task": "https://github.com/jamditis/blender-bender/issues/7",
+      "acceptance": "candidate_not_accepted_for_integration",
+      "drive_handoff": {
+        "status": "blocked_write_access",
+        "upload_verified": false,
+        "current_manifest_updated": false,
+        "other_worker_access": "unverified",
+        "note": "The Drive handoff has not completed. The candidate remains privately preserved; do not treat this register as proof that the shared Drive latest pointer has advanced."
+      }
     }
-  ]
+  ],
+  "version_policy": {
+    "authoritative_current_register": "Owner-controlled private Google Drive current/version manifest",
+    "verify_before_edit": "Resolve the explicit accepted integration version or named candidate, then compare the actual downloaded SHA-256 with the private manifest.",
+    "preserve_history": "Retain the original snapshot and dated prior versions before advancing any current pointer.",
+    "candidate_vs_accepted": "The latest candidate and accepted integration version are separate. A new upload does not imply review acceptance or geographic verification.",
+    "handoff_evidence": "Verify upload identity, size/checksum and portable dependencies; verify each intended worker's access separately. Publish only aliases, hashes, status and non-sensitive evidence."
+  }
 }

@@ -8,7 +8,7 @@ A public coordination workspace for building accurate, evidence-backed New Jerse
 
 1. Read the [shared progress ledger](https://github.com/jamditis/blender-bender/issues/1) for current direction and handoffs.
 2. Open the [private project board](https://github.com/users/jamditis/projects/37) or the [task index](PROJECT_BOARD.md).
-3. Read [how to contribute](CONTRIBUTING.md), verify your source against the [asset manifest](manifests/source-assets.json), and check the [reference catalog](references/README.md).
+3. Read [how to contribute](CONTRIBUTING.md), obtain the private Google Drive current/version manifest through authorized coordination, and verify the exact downloaded source hash. The public [asset manifest](manifests/source-assets.json) identifies the preserved original snapshot; it is not a live pointer to the newest working model. Check the [reference catalog](references/README.md).
 4. Claim one precise scope in its issue before changing a binary. Read the issue again to catch conflicting claims.
 5. Submit a branch and pull request with evidence, before/after stills, dependency checks, hashes and remaining uncertainty. Use the [review checklist](docs/REVIEW_CHECKLIST.md).
 
@@ -16,20 +16,24 @@ No one is pre-assigned. A claim is a shared coordination convention, not an atom
 
 ## What belongs where
 
-| In this repository | In existing authorized Drive or Library storage |
+| In this repository | In the owner-controlled Google Drive model store |
 | --- | --- |
 | Blender scripts and small configuration files | `.blend` files and binary working variants |
 | Reference catalog, provenance and rights notes | Original photographs, large textures and source archives |
 | Source/output hashes and public-safe asset aliases | Raw LiDAR, caches, heavy exports and renders |
 | Building issues, decisions, PRs and review notes | Large review-still packages shared through authorized private handoff |
 
-GitHub coordinates the work. It is not the only backup or the canonical binary store. Never commit private storage links or IDs, machine paths, signed download URLs, credentials or access tokens. Merely linking a source does not grant access to it.
+**Google Drive is the canonical shared model store.** Keep the latest working models, their private current/version manifest, dependencies and dated prior versions there. GitHub holds coordination and public-safe evidence records. Library copies are secondary delivery or backup copies, not the shared source of truth.
+
+Before editing, read the current Drive manifest and verify the downloaded file's SHA-256 against its exact version. Preserve a dated version before advancing any current pointer. Record separate pointers/statuses for the latest **candidate** and the **accepted integration version**: a newer upload is not automatic approval or permission to replace the accepted baseline. If a manifest or access check is missing, report that gap rather than guessing from a filename or modification date.
+
+Never commit private storage links or IDs, machine paths, signed download URLs, credentials or access tokens. Upload success and access for another worker are separate checks; do not claim either without evidence.
 
 ## Current baseline
 
 The preserved October 16, 2026 Drive snapshot contains 654 extracted files, approximately 538 MB, distributed as four ZIP packages. The October 17 audit opened the main and north scenes in Blender 4.5.14 LTS with script auto-execution disabled. Main contains 4,081 objects; north contains 3,370. Counts describe the inspected files, not completeness or accuracy.
 
-- Canonical source archives remain in owner-controlled private storage. Request an authorized handoff; no access locators are published here.
+- Canonical source archives remain in owner-controlled private Google Drive storage. Request an authorized handoff to its current/version manifest; no access locators are published here.
 - [Verified archive and scene hashes](manifests/source-assets.json)
 - [Baseline limitations and building inventory](docs/BASELINE.md)
 - [Artifact register](manifests/artifact-register.json)
