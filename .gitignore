@@ -1,0 +1,82 @@
+# Model binaries and Blender backups belong in owner-controlled private storage.
+*.blend
+*.blend[0-9]*
+*.blend@
+*.blend.gz
+
+# Archives and packaged deliveries stay outside Git.
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+
+# Raw LiDAR and point-cloud inputs stay outside Git.
+*.las
+*.laz
+*.e57
+*.pcd
+*.pts
+raw_lidar/
+raw_point_clouds/
+
+# Heavy textures, full-resolution image outputs, and render caches.
+# Keep small, approved still-review images in a separate tracked directory.
+textures/
+heavy_textures/
+render_cache/
+render_caches/
+renders/
+simulation_cache/
+*.exr
+*.hdr
+*.tif
+*.tiff
+*.tx
+*.dds
+*.ktx
+*.ktx2
+*.bphys
+*.vdb
+
+# Videos are paused and should not enter Git.
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# Local asset copies and scratch work.
+private/
+private_handoffs/
+private-handoffs/
+source_photos/
+local_assets/
+local_work/
+scratch/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Local configuration, secrets, and generated Python files.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# This file cannot enforce size, rights, privacy, or access requirements.
+# Review staged files and existing tracked files before committing.

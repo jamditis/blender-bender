@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-16",
+  "audited_on": "2026-10-17",
+  "extracted_file_count": 654,
+  "extracted_size_mb_approx": 538,
+  "compressed_archives_total_bytes": 258716526,
+  "blender_audit_version": "4.5.14 LTS",
+  "script_auto_execution": false,
+  "notes": [
+    "These are preservation and provenance checks, not assertions of geometric accuracy.",
+    "The original photo references, raw LiDAR and staged Cole measurement JSON were absent from this snapshot.",
+    "No signed download URLs or credentials are included."
+  ],
+  "assets": [
+    {
+      "filename": "montclair_state_scene_20261016_part4of4.zip",
+      "bytes": 4356084,
+      "sha256": "496701a5bf8ee4ba66d4ac7a9f99670e3bd1e589910a7e0240e1461855245f65",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "modified_at": "2026-10-16T18:04:23Z"
+    },
+    {
+      "filename": "montclair_state_scene_20261016_part1of4.zip",
+      "bytes": 86419748,
+      "sha256": "8841a44a540ffe60e6e72645fbdbc8ad416d3d085971fa245d8b9ce5d3313f5d",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "modified_at": "2026-10-16T18:04:23Z"
+    },
+    {
+      "filename": "montclair_state_scene_20261016_part2of4.zip",
+      "bytes": 79998649,
+      "sha256": "2f2ea880ec8b31e2d27779dcc5f603675b6549c5b212ed02cc6f7636deab751e",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "modified_at": "2026-10-16T18:04:23Z"
+    },
+    {
+      "filename": "montclair_state_scene_20261016_part3of4.zip",
+      "bytes": 87942045,
+      "sha256": "40874078e98d5f8e11a0bf93e06e7ee1a1a58a032ac8c9ba99820e884fcf6f75",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "modified_at": "2026-10-16T18:04:23Z"
+    },
+    {
+      "filename": "montclair_state.blend",
+      "bytes": 100044732,
+      "sha256": "aec533cabfad7da75e585f9345a50a363814102ad0024ff8709bc4e0293d053b",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "archive_member_path": "nj-scenes/montclair-state/montclair_state.blend"
+    },
+    {
+      "filename": "montclair_north.blend",
+      "bytes": 53959063,
+      "sha256": "ca849b38710f6e4cbc4ff4bc90165e0528a90f4ea6c959a1afa40cce3dddae39",
+      "source_status": "preserved_canonical_baseline",
+      "verification": "SHA-256 computed from retrieved bytes; archive CRC checks passed where applicable",
+      "verified_on": "2026-10-17",
+      "archive_member_path": "nj-scenes/montclair-state/north/montclair_north.blend"
+    }
+  ],
+  "access_note": "Source archives remain in owner-controlled private storage. Obtain an authorized handoff; no private storage identifiers or links are published."
+}

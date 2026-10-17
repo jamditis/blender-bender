@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "access_note": "All working binaries remain in owner-controlled private storage; this public register includes no private access locators.",
+  "artifacts": [
+    {
+      "alias": "msu-canonical-20261016",
+      "status": "preserved_baseline",
+      "manifest": "source-assets.json"
+    },
+    {
+      "alias": "campus-v19",
+      "status": "stale_not_canonical"
+    },
+    {
+      "alias": "sprague-study",
+      "status": "noncanonical_material_motion_study",
+      "note": "Excluded from geographic baseline; not a full-campus master."
+    },
+    {
+      "alias": "shore-starter",
+      "status": "future_backlog_not_active"
+    },
+    {
+      "alias": "newark-starter",
+      "status": "future_backlog_not_active"
+    },
+    {
+      "alias": "cole-central-cupola-first-pass-20261017",
+      "status": "provisional_needs_review",
+      "sha256": "d9a4c321db4a48a55e28fe7242ace1477b1bc5b511a6a148521069c7f945f2ee",
+      "baseline_sha256": "aec533cabfad7da75e585f9345a50a363814102ad0024ff8709bc4e0293d053b",
+      "scope": "Central cupola only; flank cupolas and building envelope remain open.",
+      "validation": "Blender 4.5.14 LTS; close/context stills inspected; 64 dependencies, zero missing on portable reopen; ZIP CRC passed.",
+      "limits": "Photo-derived widths/details; center/top from source notes without independent measurement receipt.",
+      "task": "https://github.com/jamditis/blender-bender/issues/7"
+    }
+  ]
+}

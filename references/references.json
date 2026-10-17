@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-17",
+  "source_catalog": "REFERENCE_INVENTORY.md",
+  "source_urls": [
+    "https://www.montclair.edu/campus-map",
+    "https://inside.montclair.edu/colleges-schools-research/college-communication-and-media",
+    "https://www.montclair.edu/school-of-communication-and-media/2015/08/04/14868_construction-of-the-school-of-communication-and-media-building/",
+    "https://inside.montclair.edu/news/cole-hall-earns-leed-gold-certification",
+    "https://www.hmr-architects.com/architecture/institutional/cole-hall/",
+    "https://www.montclair.edu/sites/default/files/2026-03/110321_5900_Cole-Hall-Fall-Aerial-2%20%281%29_0.jpg",
+    "https://www.montclair.edu/themes/custom/montclair/assets/img/backgrounds/footer/2025-04-11-1800.jpg",
+    "https://www.montclair.edu/sites/default/files/2025-06/101822_8885_Cole-Hall-Aerial-%281%29.jpg",
+    "https://inside.montclair.edu/sites/default/files/styles/2640x1600/public/2026-06/giving-general-image-101822_8842_Cole%20Hall%20Aerial.jpg?h=4997dc06&itok=qyl7aDvO",
+    "https://www.montclair.edu/sites/default/files/styles/2640x1600/public/2026-09/082326_262_Around_Campus_Summer-LAROSA.jpg?h=e1bddc72&itok=EZVwN7uA",
+    "https://inside.montclair.edu/colleges-schools-research/arts/performance-operations-venue-rentals-and-box-office/college-arts-venue-listing",
+    "https://inside.montclair.edu/documents/kasser-ground-plan",
+    "https://inside.montclair.edu/documents/kasser-rehearsal-room-and-lobby-plan",
+    "https://inside.montclair.edu/documents/kasser-technical-specifications",
+    "https://montclair.box.com/s/nsnt43eynf5jy75cf7u0zvsluldpche7",
+    "https://my.matterport.com/show/?m=HmxzxZAx8RZ",
+    "https://inside.montclair.edu/sites/default/files/styles/editor_100/public/2026-06/CARTonly-cpo-AlexanderKasserTheaterExterior_2026.jpg?itok=E_d3hgQY",
+    "https://www.peakperfs.org/wp-content/uploads/2023/05/kasser-at-night-wide.jpg",
+    "https://inside.montclair.edu/sites/default/files/styles/editor_100/public/2026-06/CARTonly-cpo-AmphitheaterDuringHomecoming.jpg?itok=rYOlqVK4",
+    "https://inside.montclair.edu/sites/default/files/styles/700x700/public/2026-05/scout-locations-at-montclair-state-5.jpg?h=fece7981&itok=X1UCX9eU",
+    "https://commons.wikimedia.org/wiki/File:Morehead_Hall.jpg",
+    "https://themontclarion.org/feature/photojournalism-students-showcase-their-work-in-new-exhibition/",
+    "https://themontclarion.org/wp-content/uploads/2021/12/Wide-Shot.jpg",
+    "https://themontclarion.org/wp-content/uploads/2021/12/Viewing-Slideshow.jpg",
+    "https://inside.montclair.edu/news/montclair-students-rally-around-red-hawk-olympian-olga-mikutina-watch-party-events",
+    "https://jamesbetelle.com/2009/05/18/mission-in-montclair/",
+    "https://www.montclair.edu/facilities/wp-content/uploads/sites/57/2019/02/morehead.pdf",
+    "https://epicinteriors.epicbuilds.com/portfolio/montclair-state-university-school-of-communication-media-building-life-hall/",
+    "https://epicinteriors.epicbuilds.com/wp-content/uploads/sites/3/2021/07/MontclairUniv_21.jpg",
+    "https://epicinteriors.epicbuilds.com/wp-content/uploads/sites/3/2021/07/Montclair-School-Comm-2.jpg",
+    "https://oliviampaez.wordpress.com/2017/09/14/montclair-state-universitys-new-school-of-communication-and-media/",
+    "https://montclair.wordcamp.org/2020/location/",
+    "https://inside.montclair.edu/colleges-schools-research/college-communication-and-media/ccom-facilities-and-equipment",
+    "https://inside.montclair.edu/departments/university-galleries/visit-galleries",
+    "https://inside.montclair.edu/administration/university-facilities/facilities-services",
+    "https://irdata.montclair.edu/institutionalresearch/AIP/AIP%202021.pdf",
+    "https://architizer.com/projects/george-segal-art-gallery/",
+    "https://discover.matterport.com/account/xFjS6AiUENL",
+    "https://rs.locationshub.com/Home/LocationDetail?rsLocationId=097-10150309"
+  ],
+  "map_source": "https://www.montclair.edu/campus-map",
+  "map_coordinate_kind": "Approximate official label points; NOT survey corners or floor elevations",
+  "map_coordinate_order": "WGS84 latitude, longitude",
+  "map_label_coordinates": {
+    "Alexander Kasser Theater": [
+      40.85969924926758,
+      -74.19960021972656
+    ],
+    "Amphitheater": [
+      40.86009979248047,
+      -74.1990966796875
+    ],
+    "Susan A. Cole Hall": [
+      40.85919952392578,
+      -74.19850158691406
+    ],
+    "Life Hall": [
+      40.86040115356445,
+      -74.1968002319336
+    ],
+    "Morehead Hall": [
+      40.85960006713867,
+      -74.19740295410156
+    ],
+    "George Segal Gallery": [
+      40.85980142822265,
+      -74.20020294189453
+    ],
+    "Red Hawk Deck": [
+      40.859901428222656,
+      -74.20050294189453
+    ],
+    "School of Communication and Media": [
+      40.86000061035156,
+      -74.19719696044922
+    ]
+  },
+  "rights": "Public-source link catalog only. No copyrighted photographic assets included or republication rights inferred. Wikimedia Morehead photograph explicitly CC BY-SA 4.0."
+}
